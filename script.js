@@ -16,18 +16,18 @@ for (let i = 0; i < 9; i++) {
 //Create and format 9 rows of hour blocks
 for (let i = 0; i < 9; i++) {
     $(".container").append(`<row class="time-block row" id="${i}">`);
-    $(`#${i}`).append(`<div class="hour col-sm-1">${time[i]}`);
-    $(`#${i}`).append(`<textarea class="col-md-auto">`);
-    $(`#${i}`).append(`<div class="saveBtn col-sm-1">`);
+    $(`#${i}`).append(`<div class="hour col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">${time[i]}`);
+    $(`#${i}`).append(`<textarea class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">`);
+    $(`#${i}`).append(`<div class="saveBtn col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">`);
 
     //Set proper CSS for each time block textarea
     if (i === current) {
-        $(`#${i} textarea`).attr("class", "present");
+        $(`#${i} textarea`).attr("class", "present col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10");
     }
     if (i < current) {
-        $(`#${i} textarea`).attr("class", "past");
+        $(`#${i} textarea`).attr("class", "past col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10");
     }
     if (i > current) {
-        $(`#${i} textarea`).attr("class", "future");
+        $(`#${i} textarea`).attr("class", "future col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10");
     }
 }
