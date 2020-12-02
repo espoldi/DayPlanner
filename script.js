@@ -32,14 +32,25 @@ for (let i = 0; i < 9; i++) {
     }
 }
 
-//Save button
+pullLocal();
+
+//Save button event listeners
 for (let i = 0; i < 9; i++) {
     $(`#button${i}`).on("click", function() {
         updateLocal(i);
     });
 }
 
+//Setting data to Local Storage
 function updateLocal(index) {
     var val = $(`#${index} textarea`)[0].value;
     localStorage.setItem(`textarea${index}`,val);
+}
+
+//Recall data from Local Storage
+function pullLocal() {
+    for (let i = 0; i < 9; i++) {
+        var memory = localStorage.getItem(`textarea${i}`);
+        $(`#${i} textarea`)[0].value = memory;
+    } 
 }
