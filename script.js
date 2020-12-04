@@ -24,11 +24,11 @@ for (let i = 0; i < 9; i++) {
     if (i === current) {
         $(`#${i} textarea`).attr("class", "present col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10");
     }
-    if (i < current) {
-        $(`#${i} textarea`).attr("class", "past col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10");
-    }
     if (i > current) {
         $(`#${i} textarea`).attr("class", "future col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10");
+    }
+    else {
+        $(`#${i} textarea`).attr("class", "past col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10");
     }
 }
 
