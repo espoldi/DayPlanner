@@ -1,6 +1,6 @@
 # DayPlanner
 
-
+This planner utilizes local storage on your browser to store the events you add to the planner. Make sure to hit the save button off to the side so that it will be there if you are to leave the page and come back later.
 
 ## Table of Contents
 
@@ -16,13 +16,13 @@
 
 ## Usage
 
-
+I have here a planner for creating a little more organization. It enables you to write down in hour blocks different events. This application keeps your information only on the computer that makes it.
 
 [Github Repository](https://github.com/espoldi/DayPlanner)
 
 [Live URL](https://espoldi.github.io/DayPlanner/)
 
-![Website Screenshot](/screenshot.jpeg)
+![Website Screenshot](/screenshot.png)
 
 ## License
 
